@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.header {
+    background: #d500f9;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    background: #d500f9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.button-group button:hover {
+    background: #aa00ff;
+}
+
+.result {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result .bmi-value {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.bmi-table {
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.bmi-table div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.bmi-table div:nth-child(1) span {
+    color: #ff5252;
+}
+
+.bmi-table div:nth-child(2) span {
+    color: #00c853;
+}
+
+.bmi-table div:nth-child(3) span {
+    color: #ffab00;
+}
+
+.bmi-table div:nth-child(4) span {
+    color: #d50000;
+}

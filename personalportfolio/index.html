@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7b94e4f185.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Yusra</span><br>Bakhtawar From Pakistan</h1>
+        </div>
+      </div>
+   </div>
+   <!------------about---------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/imag_bg.png" > 
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About me</h1>
+                <p>
+                    I'm a Software Engineering student with hands-on experience in web development, artificial intelligence, and computer networks. I've completed an internship at the Computer Science Department of NUST EME, where I honed my technical skills and contributed to impactful projects. I'm passionate about leveraging technology to solve complex problems and eager to explore new opportunities in the tech industry.</p>
+                <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                     <p class="tab-links "onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Desigining Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web Development</li>
+                        <li><span>App Development</span><br>Building Android/OS apps</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>july 2024- current</span><br>Web Development Intern at NUST EME </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelors</span><br>Software Engineering from SS CASE IT </li>
+                    </ul>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+   <!------------Services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Currently interning at NUST, focusing on web development to create and optimize responsive, user-friendly web applications.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Specializing in UI/UX design, I craft intuitive and visually appealing interfaces that enhance user experiences.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>                <h2>App Design</h2>
+                <p>Specializing in UI/UX design, I craft intuitive and visually appealing interfaces that enhance user experiences.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------PortFolio---------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+              <img src="images/project.png">
+                <div class="layer">
+                    <h3> C@SE Event Management System</h3>
+                    <p>"A vibrant event management system website featuring a welcoming message and a prominent registration button, set against a festive background of illuminated decorations."</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+           
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> C@SE Event Management System</h3>
+                    <p>"A sleek event management system website featuring a vibrant, festive backdrop with easy navigation, highlighting society events and a message of appreciation."</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+        </div>         
+        </div>
+    </div>
+<!-----------Contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:yusrabakhtawar6@gmail.com">yusrabakhtawar6@gmail</a></p>
+                <p><i class="fa-solid fa-square-phone-flip"></i><a href="03335967630">03335967630</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yusra-bakhtawar-5830b5307/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01d128ccc64e3adb14?mp_source=share"><i class="fa-brands fa-square-upwork"></i></a>    
+                </div>
+                <a href="images/Yusra Bakhtawar CV (1).pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Yusra Bakhtawar. All rights reserved</p>
+    </div>
+</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
